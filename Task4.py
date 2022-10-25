@@ -14,14 +14,14 @@ ForFile=''
 for i in range(len(KmN)-1):
     if KmN[i]!=0:
         if(k-i)==1:
-            ForFile+=str(KmN[i])+'x +'
+            ForFile+=str(KmN[i])+'x + '
         else:
             f=int(k-i)
             ForFile+=str(KmN[i])+'x'+'^'+str(f)+' + '
 
-ForFile+=str(KmN[-1])+'= 0'
+ForFile+=str(KmN[-1])+' = 0'
 
-with open('Task.txt', 'w+') as date:
+with open('Task4.txt', 'w+') as date:
     date.write(ForFile)
 
 print(ForFile)
